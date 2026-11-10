@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeTracker - Instituto Life</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Ejercicio de Listas Interactivas</h1>
+        <p>Listas de tareas rapidas</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="seccion-formulario">
+            <h2>Agrega una nueva tarea</h2>
+            <form id="formulario">
+                <input 
+                    type="text" 
+                    id="inputTarea" 
+                    placeholder="Ej: Estudiar JavaScript" 
+                    required
+                >
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+
+        <section class="seccion-filtros">
+            <button class="filtro activo" data-filtro="todas">Todas tus tareas</button>
+            <button class="filtro" data-filtro="pendientes">Tareas pendientes</button>
+            <button class="filtro" data-filtro="completadas">Completadas</button>
+        </section>
+
+        <section class="seccion-lista">
+            <ul id="listaTareas"></ul>
+            <p id="mensajeVacio">Sin tareas anotadas!!</p>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Instituto Life - Practica de HTML CSS y JS <br></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
